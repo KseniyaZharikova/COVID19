@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue_screen"
+    tools:context=".QuestionsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/card_shape"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_margin="20dp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/questionNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center"
+                android:textColor="@color/colorBlue"
+                android:textSize="14dp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/questionText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="24dp">
+            </TextView>
+
+
+            <LinearLayout
+                android:id="@+id/buttonLayout1"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/yesButton"
+                    android:text="Да"
+                    android:background="@drawable/red_button_shape"
+                    android:layout_margin="20dp"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"/>
+                <Button
+                    android:id="@+id/noButton"
+                    android:background="@drawable/green_button_shape"
+                    android:text="Нет"
+                    android:layout_margin="20dp"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:id="@+id/buttonLayout2"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/zero"
+                    android:layout_width="127dp"
+                    android:layout_height="36dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/green_button_shape"
+                    android:text="0" />
+
+                <Button
+                    android:id="@+id/oneToFive"
+                    android:background="@drawable/yellow_button_shape"
+                    android:text="1-5"
+                    android:layout_marginStart="5dp"
+                    android:layout_width="127dp"
+                    android:layout_height="36dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/buttonLayout3"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/fiveToTen"
+                    android:text="5-10"
+                    android:background="@drawable/orange_button_shape"
+                    android:layout_marginEnd="5dp"
+                    android:layout_width="127dp"
+                    android:layout_height="36dp"/>
+                <Button
+                    android:id="@+id/tenToFifteen"
+                    android:background="@drawable/red_button_shape"
+                    android:text="10-15"
+                    android:layout_marginStart="5dp"
+                    android:layout_width="127dp"
+                    android:layout_height="36dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
